@@ -17,9 +17,7 @@ return (
     {/* <h1 className="Title_Name"> John Joneses</h1> */}
     </div>
 <h1 className="Title_Sub">I'm a software engineer based in bla bla bla i am a  bla bla bla ya know what i mean</h1>
-<div className="Button_Cont">
-    <button className="Header_Button">Contact Me</button>
-    </div>
+    <a className="Header_Button" href = "#Contact">Contact Me</a>
         </div>
 
     </div>

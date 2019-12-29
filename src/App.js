@@ -8,15 +8,24 @@ import deer from './small-deer.2a0425af.svg'
 import Header from './Header';
 import HeaderBar from './HeaderBar';
 import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer';
+import Logo from './Logo.png'
 function App() { 
 
   return (
     <div className="App" >
       <HeaderBar />
-      <Header /> 
+      <Header />   
       <About />
+      <Projects />
+      <Contact />
+      <Footer />
+      {/* <Opening />
+      <img src={Logo} style={{width:'40px', height:'45px'}} /> */}
     </div> 
-  );
+  ); 
 }
 
 export default App;
