@@ -1,5 +1,8 @@
 import React from 'react' 
 import {FiHexagon} from 'react-icons/fi'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
 const HeaderBar = () => {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
@@ -20,15 +23,17 @@ const HeaderBar = () => {
     }
     return (
         <navbar Id="navbar" className="Header_Top_Cont">
-            <div>
-            <div className={"Logo_Cont"}>
+                
+            <div className="Logo_Cont">
 <FiHexagon className="Header_Hex" strokeWidth={1} >
 </FiHexagon>
 <h1 className="Header_Initial_Hex">K</h1>
     </div>
-            </div>
             <ul className="Header_Sections_Cont">
-            <li className="Section_Text"><a href="#About">About</a></li> 
+            <li className="Section_Text">
+   <a href="#About">About</a> 
+                </li> 
+
             <li className="Section_Text"><a href="#Projects">Projects</a></li>
             <li className="Section_Text"><a href="#Contact">Contact Me</a></li>
             </ul>

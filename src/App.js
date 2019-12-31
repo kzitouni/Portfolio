@@ -12,6 +12,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import Logo from './Logo.png'
+import "animate.css/animate.min.css";
 function App() { 
 
   return (
