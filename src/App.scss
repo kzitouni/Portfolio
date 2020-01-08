@@ -63,21 +63,7 @@ $blue: #66fcf1;
 $dark: #1f2833;
 $black: #0b0c10;
 $light: #C5C6C7;
-.Hex{
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  position: absolute;
-  animation-fill-mode: forwards;
-  top: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: 8rem;
-  font-size: 150px;
-  animation: dash 8s ease-in forwards, dis .9s ease-in-out 2s;
-  color: $blue;
-  fill: rgb(10, 25, 47);
-}
+
 .Header_Hex {
   position: absolute;
   top: 0;
@@ -97,10 +83,26 @@ $light: #C5C6C7;
   position: absolute;
   margin-top: 1.2rem;
 }
+
+.Hex{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 8rem;
+  font-size: 150px;
+  animation: dash 8s ease-in forwards, dis .72s ease-in-out 2s;
+  color: $blue;
+  margin-top: 30vh;
+  animation-fill-mode: forwards;
+  -webkit-transform:scale(1);
+
+}
 @keyframes dis {
-  from {
-      -webkit-transform:scale(1);
- }
+
   to {
       -webkit-transform:scale(0);
  }
@@ -111,21 +113,26 @@ $light: #C5C6C7;
  }
 }
 .Initial_Hex {
-  animation: K .5s ease-in 1.5s, Cont .65s ease-in 2s;
-  color: white;
+  animation: K .5s ease-in 1.5s, Cont .5s ease-in 2s;
+  color: $dark;
   animation-fill-mode: forwards;
   font-size: 80px;
   width: 100%;
-  height: 8rem;
-  padding: 5px 0 0 0;
+  height: 6.25rem;
+  padding: 16px 0 0 0;
+  position: absolute;
+  margin-top: 31vh;
 }
 @keyframes K {
   to {
-      color: black;
+      color: $blue;
  }
 }
 .Logo_Cont {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $dark;
 }
 @keyframes Cont {
   from {
@@ -161,7 +168,7 @@ $light: #C5C6C7;
   justify-content: center;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 8rem;
+  margin-bottom: 13%;
 }
 .Header_Cont {
   background-color: $dark;
@@ -183,7 +190,7 @@ $light: #C5C6C7;
   color: $blue;
 }
 .Header_Top_Cont {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   background-color: $dark;
   position: fixed;
@@ -192,6 +199,8 @@ $light: #C5C6C7;
   transition: top 0.3s;
   z-index: 4;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  grid-template-columns: 20% 80%;
+  height: 5rem;
 }
 .Header_Sections_Cont {
   display: flex;
@@ -204,13 +213,14 @@ $light: #C5C6C7;
   color: #8892b0;
 }
 .Section_Text {
-  padding: 30px 30px 30px 30px;
   color: $light;
   font-size: 18px;
+  width: max-content;
+  margin-right: 10%;
 }
 a {
   color: inherit;
-}
+} 
 .Section_Text a{
   transition: .3s ease-in-out;
   cursor: pointer;
@@ -239,6 +249,13 @@ a {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
+}
+.Page {
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 .About_Line {
   color: $dark;
@@ -344,96 +361,11 @@ button:focus {
 .Contact_Button:hover {
   background-color: rgba(31, 40, 51, .7);
 }
-.Project_Image {
-  background-image: url('https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-  height: 19rem;
-  width: 31rem;
-  margin-left: 15%;
-  margin-top: 7%;
-  position: relative;
-  border-radius: 7px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
-}
-.Title_Div {
-  width: 35rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-left: 57.5%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: rgba(31, 40, 51, 1);
-  font-weight: bold;
-  transition: .5s ease-in-out;
-}
-.Text_Box {
-  width: 25rem;
-  height: 6rem;
-  background-color: $dark;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-left: 90%;
-  margin-top: 17%;
-  border-radius: 7px;
-  box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-.Title_Div > h1:hover {
-  color: rgba(31, 40, 51, .7);
-  cursor: pointer;
-}
-.Text_Box > h1 {
-  width: 90%;
-  height: 60%;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color: $light;
-  font-size: 15px;
-}
-.Github_Icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-left: 164.6%;
-  margin-top: 55%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: $light;
-  font-size: 30px;
-  transition: .3s ease-in-out;
-}
+
 a {
   text-decoration: none;
 }
-.Github_Icon:hover {
-  color: rgba(4, 43, 97, .7);
-  cursor: pointer;
-}
-.Dark_Overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: 7px;
-  opacity: .3;
-  background-color: $black;
-  transition: .7s ease-in-out;
-  z-index: 1;
-  cursor: pointer;
-}
-.Dark_Overlay:hover {
-  opacity: 0;
-}
+
 .Footer {
   height: 3rem;
   width: 100%;
@@ -445,99 +377,11 @@ a {
   font-size: 10px;
   margin-top: 10%;
 }
-.Project_Image_Middle {
-  height: 19rem;
-  width: 35.6rem;
-  margin-left: 42%;
-  margin-top: 7%;
-  position: relative;
-  border-radius: 7px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
-}
-.Text_Box_Middle {
-  width: 25rem;
-  height: 6rem;
-  background-color: $dark;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-left: -61.5%;
-  margin-top: 17%;
-  border-radius: 7px;
-  box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
+
 .Language_Cont_Flex {
   display: flex;
 }
-.Text_Box_Middle > h1 {
-  width: 90%;
-  height: 60%;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color: $light;
-  font-size: 15px;
-}
-.Title_Div_Middle {
-  position: absolute;
-  width: auto;
-  left: 0;
-  top: 0;
-  margin-left: -61.5%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: rgba(31, 40, 51, 1);
-  font-weight: bold;
-  z-index: 2;
-}
-.Title_Div > h1 {
-  transition: .3s ease-in-out;
-}
-.Title_Div_Middle > h1 {
-  transition: .3s ease-in-out;
-}
-.Title_Div > h1:hover {
-  color: $blue;
-}
-.Title_Div_Middle > h1:hover {
-  color: rgba(31, 40, 51, .7);
-  cursor: pointer;
-}
-.Github_Icon_Middle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: auto;
-  margin-left: -61.5%;
-  margin-top: 48%;
- /* border-radius: 7px;
-  */
- /* box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
-  */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: $light;
-  font-size: 30px;
-  z-index: 2;
-  transition: .3s ease-in-out;
-}
-.Github_Icon:hover{
-  color: $blue;
-}
-.Github_Icon_Middle:hover {
-  color: $blue;
-  cursor: pointer;
-}
+
 @media only screen and (max-width: 620px) {
   .Language_Cont_Flex {
       display: unset;
@@ -545,18 +389,10 @@ a {
   .Language_Column2{
       margin-left: 0;
  }
+
 }
-@media only screen and (max-width: 1013px) {
-  .Text_Box {
-      width: 23.5rem;
-      height: 6.5rem;
- }
-}
+
 @media only screen and (max-width: 980px) {
-  .Text_Box {
-      width: 22.5rem;
-      height: 6.8rem;
- }
   .About_Languages_Cont > div > div {
       display: unset;
  }
@@ -564,107 +400,286 @@ a {
       margin-left: 0;
  }
 }
-@media only screen and (max-width: 966px) {
-  .Text_Box {
-      width: 21.5rem;
-      height: 7rem;
- }
-}
-@media only screen and (max-width: 966px) {
-  .Text_Box {
-      width: 20.5rem;
-      height: 7.5rem;
- }
-}
-@media only screen and (max-width: 932px) {
-  .Text_Box {
-      width: 19.5rem;
-      height: 8rem;
- }
-}
-@media only screen and (max-width: 911px) {
-  .Text_Box {
-      width: 19rem;
-      height: 8.2rem;
- }
-}
-@media only screen and (max-width: 902px) {
-  .Text_Box {
-      width: 18.2rem;
-      height: 8.5rem;
- }
-}
-@media only screen and (max-width: 885px) {
-  .Text_Box {
-      width: 60%;
-      height: 8.5rem;
-      background-color: unset;
-      margin-left: 36.5%;
-      box-shadow: unset;
-      margin-top: 4rem;
- }
-  .Dark_Overlay {
-      opacity: .8;
-      cursor: default;
- }
-  .Title_Div {
-      width: 60%;
-      margin-left: 33.5%;
+
+.ProjectDesc {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 40%;
+  position: relative;
+  flex: 1;
+
+  >a {
+    font-size: 25px;
+    color: #1f2833;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  >a:hover{
+    color: $blue;
+    cursor: pointer;
+  }
+  .TextBox {
+    width: 110%;
+    height: max-content;
+    padding: 7px 0px;
+    background: $dark;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    >p {
       color: $light;
-      z-index: 2;
- }
-  .Project_Image{
+      font-size: 15px;
+      line-height: 1.3;
+      text-shadow: 1px 1px 1px #0d358b;
+      text-align: left;
+      width: 90%;
+    }
+  }
+}
+.ProjectBottom {
+  display: flex;
+  flex-direction: column;
+  >a {
+    color: #C5C6C7;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+  >a:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.Projects_Cont {
+  width: 85%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  align-self: center;
+
+}
+
+.Project {
+  height: 24rem;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  margin: 4rem 0px;
+
+}
+.ProjectImg {
+  display: flex;
+  justify-content: flex-end;
+  height: max-content;
+  width: 60%;
+  min-width: 32rem;
+  position: relative;
+  border-radius: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  img {
+    width: 35rem;
+    border-radius: 7px;
+    max-height: 24rem;
+  }
+}
+
+.ImgOver {
+  background-color: transparent;
+  transition: none;
+  }
+.ImgOver {
+  height: 100%;
+  width: 35rem;
+  position: absolute;
+  border-radius: 7px;
+  opacity: 0.3;
+  background-color: #0b0c10;
+  transition: 0.7s ease-in-out;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.ImgOver:hover {
+  opacity: 0;
+}
+.ProjectCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.ProjectCont:nth-of-type(2) {
+  >.Project:nth-of-type(2) {
+    flex-direction: row-reverse;
+    .TextBox {
+      left: 0;
+      right: unset;
+    }
+    .ProjectDesc:nth-of-type(2) {
+      align-items: flex-start;
+    }
+    .ProjectBottom {
+      >a {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 730px) {
+  .ProjectImg {
+    width: 100%;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Project {
+    flex-direction: column;
+    height: 36rem;
+    margin: 3rem 0px;
+  }
+  .ProjectImg {
+    width: 100%;
+  }
+  .ProjectBottom {
+    margin-top: 2rem;
+    >a {
+      align-self: flex-start;
+    }
+  }
+  .ProjectDesc {
+    height: unset;
+    width: 100%;
+    align-items: flex-start;
+    >a {
+      margin-top: 2rem;
+    }
+    .TextBox {
+      margin-top: 1rem;
       width: 100%;
-      margin-left: 0;
- }
-  .Github_Icon{
-      margin-left: 90%;
-      margin-top: 16rem;
-      z-index: 2;
-      color: $light;
- }
-  .Dark_Overlay:hover{
-      opacity: .8;
- }
-  .Project_Image_Middle {
-      width: 100%;
-      margin: auto;
-      margin-top: 5rem;
-      background-size: contain;
-      background-position-y: center 
- }
-  .Text_Box_Middle{
-      width: 60%;
-      height: 8rem;
-      background-color: unset;
-      margin-left: 5%;
+      background: unset;
+      position: unset;
+      right:unset;
+      top: unset;
       box-shadow: unset;
-      margin-top: 4rem;
-      justify-content: unset;
- }
-  .Title_Div_Middle{
-      width: 60%;
-      margin-left: 5%;
-      color: $light;
-      z-index: 2;
-      color: #C5C6C7;
-      align-items: start;
-      justify-content: unset;
- }
-  .Github_Icon_Middle{
-      margin-left: 5%;
-      margin-top: 16rem;
- }
+      justify-content: flex-start;
+      >p {
+        text-shadow: unset;
+        color: #333;
+      }
+    }
+  }
+  .ProjectCont:nth-of-type(2) > .Project:nth-of-type(2) {
+    flex-direction: column;
+  }
 }
-@media only screen and (max-width: 480px) {
-  .Title {
-      display: unset;
-      text-align: center;
- }
+
+@media only screen and (max-width: 900px) {
+  .ProjectImg {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    img {
+      width: 80%;
+      max-height: unset;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    div {
+      width: max-content;
+      height: max-content;
+      max-height: 24rem;
+    }
+  }
+    .ProjectCont:nth-of-type(2) > .Project:nth-of-type(2) {
+      flex-direction: column;
+    }
+    .Project {
+      flex-direction: column;
+      height: 40rem;
+      margin: 3rem 0px;
+    }
+    .ProjectImg {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      img {
+        width: 80%;
+        max-height: unset;
+        object-fit: contain;
+        border-radius: 12px;
+      }
+      div {
+        width: max-content;
+        height: max-content;
+        max-height: 24rem;
+      }
+    }
+    .ImgOver {
+      background-color: transparent;
+      transition: none;
+      }
+    .ProjectBottom {
+      margin-top: 2rem;
+      >a {
+        align-self: flex-start;
+      }
+    }
+    .ProjectDesc {
+      height: unset;
+      width: 100%;
+      align-items: flex-start;
+      >a {
+        margin-top: 2rem;
+      }
+      .TextBox {
+        margin-top: 1rem;
+        width: 70%;
+        background: unset;
+        position: unset;
+        right:unset;
+        top: unset;
+        box-shadow: unset;
+        justify-content: flex-start;
+        >p {
+          text-shadow: unset;
+          color: #333;
+        }
+      }
+    }
+  
+  
+
 }
-.Title_Div_Middle > h1:hover {
-  color: $blue;
+
+
+
+@media only screen and (max-width: 400px) {
+  .Section_Text{
+    margin-right: 5%;
+  }
 }
-.Github_Icon_Middle:hover {
-  color: $blue;
+
+.Web{
+  -webkit-font-smoothing: unset;
+  display: block;
 }

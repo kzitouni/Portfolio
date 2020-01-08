@@ -1,33 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
-import Santa from './Santa.svg'
-import Particles from 'react-particles-js';
-import Opening from './Opening'
-import deer from './small-deer.2a0425af.svg'
-import Header from './Header';
-import HeaderBar from './HeaderBar';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
-import Logo from './Logo.png'
+import React, { useState } from "react";
+import "./App.scss";
+import Opening from "./Opening";
+import Header from "./Header/Header";
+import HeaderBar from "./Header/HeaderBar";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import "animate.css/animate.min.css";
-function App() { 
+function App() {
+  const [page, setPage] = useState(<Opening />);
 
-  return (
-    <div className="App" >
-      <HeaderBar />
-      <Header />   
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      {/* <Opening />
-      <img src={Logo} style={{width:'40px', height:'45px'}} /> */}
-    </div> 
-  ); 
+  setTimeout(() => {
+    setPage(
+      <div className="Page">
+        <HeaderBar />
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }, 2900);
+  return <div className="App">{page}</div>;
 }
 
 export default App;
- 

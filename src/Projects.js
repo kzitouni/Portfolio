@@ -1,70 +1,131 @@
-import React from 'react'
-import {FaGithub} from 'react-icons/fa'
-import RealEstate from './RE4.jpg'
-import RE1 from './image2.jpg'
-import App from './7-lyft-app.png'
-import ScrollAnimation from 'react-animate-on-scroll';
- 
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import RealEstate from "./images/Real-estate.jpg";
+import ebay from "./images/ebay.jpg";
+import App from "./images/7-lyft-app.png";
+import ScrollAnimation from "react-animate-on-scroll";
+
 const Projects = () => {
-    return (
-        <div className="About_Cont" id="Projects">
-            <div className="About_Title_Cont">
-            <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
-                <h1 className="About_Title" style={{minWidth: '7rem'}}>Projects</h1>
-                <hr className="About_Line" />
-                </ScrollAnimation>
+  return (
+    <div className="Projects_Cont" id="Projects">
+      <div className="About_Title_Cont">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+          <h1 className="About_Title">Projects</h1>
+          <hr className="About_Line" />
+        </ScrollAnimation>
+      </div>
+      <div className="ProjectCont">
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce="true"
+          className="Project"
+        >
+          <div className="ProjectImg">
+            <div>
+              <img src={RealEstate} alt="Real-Estate project" />
+              <a
+                className="ImgOver Web"
+                href="https://kz-real-estate.netlify.com/"
+                target="_blank"
+              />
             </div>
-            <div style={{width: '100%', margin: 'auto', maxWidth: '1264px'}}>
-            <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
-            <div className="Project_Image" style={{backgroundImage:`url(${App})`}}>
-            <div className="Dark_Overlay"></div>
-            <div className="Text_Box">
-                <h1>This project is a really cool project that used react javascript and other frameworks to do a fetch call to an api and get back user information</h1>
+          </div>
+          <div className="ProjectDesc">
+            <a href="https://kz-real-estate.netlify.com/" target="_blank">
+              Real Estate
+            </a>
+            <div className="TextBox">
+              <p>
+                A responsive real estate website that utilizes fetch calls to
+                the Zillow API to return the home and surrounding homes for any
+                address searched. Google maps was utilized to display the
+                location of each home and an AWS server was set up to handle
+                fetch calls to the Zillow API more effectively
+              </p>
             </div>
-            <div className="Title_Div">
-            <h1 style={{fontSize:"25px", zIndex:'1'}}>Class Registration App</h1>
+            <div className="ProjectBottom">
+              <h2>React - Javascript - HTML - SCSS - Zillow Api - Git</h2>
+              <a
+                href="https://github.com/kzitouni/Real_Estate_Site"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
             </div>
-            <div className="Title_Div" style={{marginTop:'14rem'}}>
-            <p style={{fontSize: '15px', fontWeight: '100'}}>React Native - Javascript - Puppateer - AWS</p>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce="true"
+          className="Project"
+        >
+          <div className="ProjectImg">
+            <div>
+              <img src={App} alt="Class Project App" />
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                className="ImgOver Web"
+              />
             </div>
-            <FaGithub className="Github_Icon"/>
+          </div>
+          <div className="ProjectDesc">
+            <a>Outclass App</a>
+            <div className="TextBox">
+              <p>
+                A production ready React Native app integrated with Stripe and
+                paypal where users could buy and sell closed college classes
+                from one another AWS was utilized for user authentication, No
+                SQL database, and web scraping
+              </p>
             </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
-            <div className="Project_Image_Middle" style={{backgroundImage:`url(${RealEstate})`}}>
-                <div className="Dark_Overlay"></div>
-            <div className="Text_Box_Middle" >
-                <h1 style={{textAlign:'left'}}>A real estate web searcher that returns the estimated value of the houses along with specific information about the home.  Google maps was used to show the location of each home on the map. </h1>
+            <div className="ProjectBottom">
+              <h2>React Native - Javascript - Puppateer - AWS</h2>
+              <a href="https://google.com" target="_blank">
+                <FaGithub />
+              </a>
             </div>
-            <div className="Title_Div_Middle">
-            <h1 style={{fontSize:"25px"}}>Real Estate Site</h1>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce="true"
+          className="Project"
+        >
+          <div className="ProjectImg">
+            <div>
+              <img src={ebay} alt="Ebay-Redesign project" />
+              <a
+                className="ImgOver Web"
+                href="https://kz-ebay-redesign.netlify.com/"
+                target="_blank"
+              />
+            </div>{" "}
+          </div>
+          <div className="ProjectDesc">
+            <a href="https://kz-ebay-redesign.netlify.com/" target="_blank">
+              Ebay Redesign
+            </a>
+            <div className="TextBox">
+              <p>
+                A responsive redesigned website of Ebays utilizing the Ebay API
+                to make fetch calls and retrieve unique item information.
+              </p>
             </div>
-            <div className="Title_Div_Middle" style={{marginTop: '14rem', fontWeight: '100'}}>
-            <p style={{fontSize: '15px'}}>React - Javascript - HTML - SCSS - Git</p>
+            <div className="ProjectBottom">
+              <h2>React - Javascript - HTML - CSS - Ebay API - Git</h2>
+              <a
+                href="https://github.com/kzitouni/Ebay_Site_Redesign"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
             </div>
-            <FaGithub className="Github_Icon_Middle" />
-            </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
-            <div className="Project_Image" style={{backgroundImage: `url(${RE1})`}}>
-            <div className="Dark_Overlay"></div>
-            <div className="Text_Box">
-                <h1>A redesign of the Ebay site with a fetch call to Ebay's API.  You can search anything and get back specific information for any item.</h1>
-            </div>
-            <div className="Title_Div">
-            <h1 style={{fontSize:"25px"}}>Ebay Redesign</h1>
-            </div>
-            <div className="Title_Div" style={{marginTop: '14rem'}}>
-            <p style={{fontSize: '15px', fontWeight: '100',}}>React - Javascript - HTML - SCSS - Git</p>
-            </div>
-            <FaGithub className="Github_Icon"/>
-            </div>
-            </ScrollAnimation>
+          </div>
+        </ScrollAnimation>
+      </div>
+    </div>
+  );
+};
 
-            </div>
-
-        </div>
-    )
-}
-
-export default Projects
+export default Projects;
