@@ -17,8 +17,10 @@ const About = () => {
           <p className="About_Text">
             I'm a software engineer based in New York. I am passionate about
             building remarkable websites and web apps that provide an
-            exceptional user interface. I'm a very fast learner and always
-            looking to tackle on exciting projects.
+            exceptional user interface.
+            I'm a people person and have worked well in various team enviornments and excel in communicating and being a team player.
+            I'm interested in the entire front end spectrum and am
+            always looking for ambitious projects to tackle on and demonstrate my exceptional skills.
           </p>
         </ScrollAnimation>
 

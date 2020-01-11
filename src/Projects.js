@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import RealEstate from "./images/Real-estate.jpg";
 import ebay from "./images/ebay.jpg";
-import App from "./images/7-lyft-app.png";
+import App from "./images/Outclass.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Projects = () => {
@@ -59,11 +59,11 @@ const Projects = () => {
           animateOnce="true"
           className="Project"
         >
-          <div className="ProjectImg">
+          <div className="ProjectImg" style={mid}>
             <div>
               <img src={App} alt="Class Project App" />
               <a
-                href="https://www.google.com"
+                href="https://expo.io/@kzitouni/OutClass"
                 target="_blank"
                 className="ImgOver Web"
               />
@@ -81,7 +81,7 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React Native - Javascript - Puppateer - AWS</h2>
-              <a href="https://google.com" target="_blank">
+              <a href="https://github.com/kzitouni/Outclass" target="_blank">
                 <FaGithub />
               </a>
             </div>
@@ -128,4 +128,7 @@ const Projects = () => {
   );
 };
 
+const mid ={
+  width: 'unset'
+}
 export default Projects;
