@@ -7,16 +7,12 @@ const Header = () => {
   return (
     <div className="Header_Cont">
       <div className="Title_Lines_Cont">
-        <ScrollAnimation
-          animateIn="fadeInDown"
-          animateOnce="true"
-          className="Title_Cont"
-        >
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} className="Title_Cont"  >
           <h1 className="Title">
-            Hi, my name is<h1 className="Title_Name">Karim Zitouni</h1>
+            Hi, my name is<small className="Title_Name">Karim Zitouni</small>
           </h1>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <h1 className="Title_Sub">
             I'm a software engineer based in New York. I specialize in building
             high quality web-sites and web-apps with a keen attention to detail.

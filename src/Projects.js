@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="Projects_Cont" id="Projects">
       <div className="About_Title_Cont">
-        <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <h1 className="About_Title">Projects</h1>
           <hr className="About_Line" />
         </ScrollAnimation>
@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="ProjectCont">
         <ScrollAnimation
           animateIn="fadeInUp"
-          animateOnce="true"
+          animateOnce={true}
           className="Project"
         >
           <div className="ProjectImg">
@@ -56,7 +56,7 @@ const Projects = () => {
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInUp"
-          animateOnce="true"
+          animateOnce={true}
           className="Project"
         >
           <div className="ProjectImg" style={mid}>
@@ -89,7 +89,7 @@ const Projects = () => {
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInUp"
-          animateOnce="true"
+          animateOnce={true}
           className="Project"
         >
           <div className="ProjectImg">

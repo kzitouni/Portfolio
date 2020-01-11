@@ -6,14 +6,14 @@ const About = () => {
     <div className="About_Cont" id="About">
       <div className="About_Title_Cont">
         <div className="About_Head_Cont">
-          <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+          <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
             <h1 className="About_Title">About Me</h1>
             <hr className="About_Line" />
           </ScrollAnimation>
         </div>
       </div>
       <div className="About_Text_Cont">
-        <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+        <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
           <p className="About_Text">
             I'm a software engineer based in New York. I am passionate about
             building remarkable websites and web apps that provide an
@@ -25,13 +25,13 @@ const About = () => {
         </ScrollAnimation>
 
         <div className="About_Languages_Cont">
-          <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+          <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
             <p className="About_Languages">Skills</p>
           </ScrollAnimation>
           <div className="Language_Cont_Flex">
             <div>
               <ul>
-                <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+                <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                   <li className="Language_Text">
                     <p className="Bullet">•</p>Javascript (ES6+)
                   </li>
@@ -48,7 +48,7 @@ const About = () => {
               </ul>
 
               <ul className="Language_Column1">
-                <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+                <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                   <li className="Language_Text">
                     <p className="Bullet">•</p>HTML & S(CSS)
                   </li>
@@ -66,15 +66,13 @@ const About = () => {
             </div>
 
             <ul className="Language_Column2">
-              <ScrollAnimation animateIn="fadeInUp" animateOnce="true">
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                 <li className="Language_Text">
                   <p className="Bullet">•</p>Git & Agile
                 </li>
                 <li className="Language_Text">
                   <p className="Bullet">•</p>Responsive Design
                 </li>
-                {/* <li className="Language_Text" ><p className="Bullet">•</p>AWS Deployment</li>
-<li className="Language_Text" ><p className="Bullet">•</p>NoSQL & SQL</li> */}
               </ScrollAnimation>
             </ul>
           </div>
