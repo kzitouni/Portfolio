@@ -70,7 +70,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="ProjectDesc">
-            <a>Outclass App</a>
+            <a href="https://expo.io/@kzitouni/OutClass" target="_blank">Outclass App</a>
             <div className="TextBox">
               <p>
                 A production ready React Native app integrated with Stripe and
