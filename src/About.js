@@ -70,7 +70,7 @@ const About = () => {
                 <li className="Language_Text">
                   <p className="Bullet">•</p>Git & Agile
                 </li>
-                <li className="Language_Text">
+                <li className="Language_Text" >
                   <p className="Bullet">•</p>Responsive Design
                 </li>
               </ScrollAnimation>
