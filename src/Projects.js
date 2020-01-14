@@ -59,7 +59,7 @@ const Projects = () => {
           animateOnce={true}
           className="Project"
         >
-          <div className="ProjectImg" style={mid}>
+          <div className="Middle_Proj ProjectImg" >
             <div>
               <img src={App} alt="Class Project App" />
               <a
