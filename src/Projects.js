@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import RealEstate from "./images/Real-estate.jpg";
 import ebay from "./images/ebay.jpg";
 import App from "./images/Outclass.jpg";
@@ -45,12 +46,17 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React - Javascript - HTML - SCSS - Zillow Api - Git</h2>
-              <a
-                href="https://github.com/kzitouni/Real_Estate_Site"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
+              <div>
+                <a
+                  href="https://github.com/kzitouni/Real_Estate_Site"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+                <a href="https://kz-real-estate.netlify.com/" target="_blank">
+                  <FiExternalLink />
+                </a>
+              </div>
             </div>
           </div>
         </ScrollAnimation>
@@ -59,7 +65,7 @@ const Projects = () => {
           animateOnce={true}
           className="Project"
         >
-          <div className="Middle_Proj ProjectImg" >
+          <div className="ProjectImg" id="Middle_Proj">
             <div>
               <img src={App} alt="Class Project App" />
               <a
@@ -70,7 +76,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="ProjectDesc">
-            <a href="https://expo.io/@kzitouni/OutClass" target="_blank">Outclass App</a>
+            <a href="https://expo.io/@kzitouni/OutClass" target="_blank">
+              Outclass App
+            </a>
             <div className="TextBox">
               <p>
                 A production ready React Native app integrated with Stripe and
@@ -81,9 +89,14 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React Native - Javascript - Puppateer - AWS</h2>
-              <a href="https://github.com/kzitouni/Outclass" target="_blank">
-                <FaGithub />
-              </a>
+              <div>
+                <a href="https://github.com/kzitouni/Outclass" target="_blank">
+                  <FaGithub />
+                </a>
+                <a href="https://expo.io/@kzitouni/OutClass" target="_blank">
+                  <FiExternalLink />
+                </a>
+              </div>
             </div>
           </div>
         </ScrollAnimation>
@@ -114,12 +127,17 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React - Javascript - HTML - CSS - Ebay API - Git</h2>
-              <a
-                href="https://github.com/kzitouni/Ebay_Site_Redesign"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
+              <div>
+                <a
+                  href="https://github.com/kzitouni/Ebay_Site_Redesign"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+                <a href="https://kz-ebay-redesign.netlify.com/" target="_blank">
+                  <FiExternalLink />
+                </a>
+              </div>
             </div>
           </div>
         </ScrollAnimation>
@@ -128,7 +146,7 @@ const Projects = () => {
   );
 };
 
-const mid ={
-  width: 'unset'
-}
+const mid = {
+  width: "unset"
+};
 export default Projects;
