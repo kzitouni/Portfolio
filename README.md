@@ -5,7 +5,7 @@ A production ready React Native app integrated with Stripe and paypal where user
 
 <img src="https://gitimages12.s3.amazonaws.com/image+(5).jpg" />
 <p align="center">
-<a href="https://expo.io/@kzitouni/OutClass" target="_blank">
+<a href="https://expo.io/@kzitouni/OutClass" target="_blank" >
 <img src="https://gitimages12.s3.amazonaws.com/LiveSite-svg.svg" />
 </a>
 </p>
