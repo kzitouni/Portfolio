@@ -9,9 +9,10 @@ A production ready React Native app integrated with Stripe and paypal where user
 <img src="https://gitimages12.s3.amazonaws.com/LiveSite-svg.svg" />
 </a>
 </p>
+
 ###
 
-| Technology Utilized | Use Case |
+| Technology Utilized |
 | ------ | ------ |
 | React Native |
 | Graphql |
