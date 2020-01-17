@@ -10,6 +10,7 @@ A production ready React Native app integrated with Stripe and paypal where user
 </a>
 </p>
 ###
+
 | Technology Utilized | Use Case |
 | ------ | ------ |
 | React Native |
