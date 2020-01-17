@@ -13,11 +13,11 @@ A production ready React Native app integrated with Stripe and paypal where user
 
 # Technology Utilized 
 
-Bullet list React Native 
-Bullet list Graphql 
-| AWS Dynamodb |
-| AWS Lambda |
-| Puppeteer |
-| Node.js |
-| Stripe API |
-| Git |
+* React Native 
+* Graphql 
+* AWS Dynamodb 
+* AWS Lambda 
+* Puppeteer 
+* Node.js 
+* Stripe API 
+* Git 
