@@ -20,16 +20,14 @@ const Contact = () => {
           </p>
         </ScrollAnimation>
       </div>
-      <form method="post" action="mailto:karimzitouni05@gmail.com">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <button className="Contact_Button" href="mailto:karimzitouni05@gmail.com">
+          <a className="Contact_Button" href="mailto:karimzitouni05@gmail.com">
             <div>
               <MdMailOutline />
-              <a>Message Me</a>
+              <p>Message Me</p>
             </div>
-          </button>
+          </a>
         </ScrollAnimation>
-      </form>
     </div>
   );
 };

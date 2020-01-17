@@ -122,7 +122,8 @@ const Projects = () => {
             <div className="TextBox">
               <p>
                 A responsive redesigned website of Ebays utilizing the Ebay API
-                to make fetch calls and retrieve unique item information.
+                to make fetch calls and retrieve unique item information.  Built on the Reactjs
+                library utilizing HTML, CSS, and Javascript.
               </p>
             </div>
             <div className="ProjectBottom">

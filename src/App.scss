@@ -350,12 +350,13 @@ button:focus {
   margin-top: 4%;
   transition: .5s ease-in-out;
   cursor: pointer;
+  display: inline-block;
 }
 .Contact_Button > div {
   display: flex;
   align-items: center;
 }
-.Contact_Button > div > a {
+.Contact_Button > div > p {
   margin-left: .5rem;
 }
 .Contact_Button:hover {
