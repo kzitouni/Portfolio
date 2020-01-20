@@ -14,7 +14,7 @@ const Header = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <h1 className="Title_Sub">
-            I'm a software engineer based in New York. I specialize in building
+            I'm a Front End web developer based in New York. I specialize in building
             high quality web-sites and web-apps with a keen attention to detail.
           </h1>
           <a className="Header_Button" href="#Contact">

@@ -15,7 +15,7 @@ const About = () => {
       <div className="About_Text_Cont">
         <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
           <p className="About_Text">
-            I'm a software engineer based in New York. I am passionate about
+            I'm a Front End web developer based in New York. I am passionate about
             building remarkable websites and web apps that provide an
             exceptional user interface.
             I'm a people person and have worked well in various team enviornments and excel in communicating and being a team player.

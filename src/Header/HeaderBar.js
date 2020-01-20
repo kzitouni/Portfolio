@@ -21,7 +21,7 @@ const HeaderBar = () => {
   };
   return (
     <div id="navbar" className="Header_Top_Cont">
-      <div className="Logo_Cont" style={{ height: "5rem" }}>
+      <div className="Logo_Cont" style={{ height: "unset", marginLeft: '7vw' }}>
         <FiHexagon className="Header_Hex" strokeWidth={1}></FiHexagon>
         <h1 className="Header_Initial_Hex">K</h1>
       </div>
