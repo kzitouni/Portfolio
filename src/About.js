@@ -73,6 +73,9 @@ const About = () => {
                 <li className="Language_Text" >
                   <p className="Bullet">•</p>Responsive Design
                 </li>
+                <li className="Language_Text" >
+                  <p className="Bullet">•</p>Python
+                </li>
               </ScrollAnimation>
             </ul>
           </div>
