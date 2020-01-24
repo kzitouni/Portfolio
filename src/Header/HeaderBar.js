@@ -33,7 +33,20 @@ const OpenMenu = () => {
   if(OpenHam) return setOpenHam(false)
   else return setOpenHam(true)
 }
+useEffect(() => {
+  function handleResize() {
+    setPageWidth(window.innerWidth)
+    if(PageWidth >= 730 && OpenHam) {
+      setOpenHam(false)
+      document.getElementsByTagName("body")[0].style.overflowY = "unset"
+    }
+  }
+  window.addEventListener('resize', handleResize)
 
+  return _ => {
+    window.removeEventListener('resize', handleResize)
+  }
+})
 useEffect(() => {
   if(PageWidth < 730 && OpenHam) {
     document.getElementsByTagName("body")[0].style.overflowY = "hidden"
@@ -51,7 +64,7 @@ const OpenMenuStyle = {transform: "translateX(0%)", display: "flex"}
         <h1 className="Header_Initial_Hex">K</h1>
       </div>
       <ul className="Header_Sections_Cont">
-      <HamburgerSqueeze className = "Hamburger" isActive={OpenHam} toggleButton={() => {OpenMenu()}} buttonColor="transparent" barColor={'#C5C6C7'} />
+      <HamburgerSqueeze className = "Hamburger" isActive={OpenHam} toggleButton={() => {OpenMenu()}} buttonColor="transparent" barColor={'#ccd6f6'} />
         <div className="DropDown_Cont" style = {OpenHam ? OpenMenuStyle : null}> 
           <li className="DropDown">
             <a onClick={() => setOpenHam(false)} href="#About">About</a>
