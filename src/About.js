@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const About = () => {
+const About = () => { 
+
   return (
     <div className="About_Cont" id="About">
       <div className="About_Title_Cont">
@@ -11,7 +12,7 @@ const About = () => {
             <hr className="About_Line" />
           </ScrollAnimation>
         </div>
-      </div>
+      </div> 
       <div className="About_Text_Cont">
         <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
           <p className="About_Text">
@@ -22,6 +23,7 @@ const About = () => {
             I'm interested in the entire front end spectrum and am
             always looking for ambitious projects to tackle on and demonstrate my exceptional skills.
           </p>
+
         </ScrollAnimation>
 
         <div className="About_Languages_Cont">

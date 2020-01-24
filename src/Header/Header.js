@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Opening from "../Opening";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
