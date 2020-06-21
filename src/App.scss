@@ -384,7 +384,8 @@ a {
 }
 
 #Middle_Proj{
-  width: unset;
+  // width: unset;
+  justify-content: flex-start;
 }
 
 .Language_Cont_Flex {
@@ -478,7 +479,7 @@ margin-top: 1rem;
 }
 
 .Projects_Cont {
-  width: 85%;
+  width: 75%;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -654,7 +655,7 @@ margin-top: 1rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
   .ProjectImg {
     width: 100%;
     align-self: center;

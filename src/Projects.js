@@ -38,7 +38,7 @@ const Projects = () => {
             <div className="TextBox">
               <p>
                 A responsive real estate website that utilizes fetch calls to
-                the Zillow API to return the home and surrounding homes for any
+                the Zillow API to return homes for any
                 address searched. Google maps was utilized to display the
                 location of each home and an AWS server was set up to handle
                 fetch calls to the Zillow API more effectively
