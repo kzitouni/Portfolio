@@ -17,7 +17,7 @@ const Projects = () => {
       </div>
       <div className="ProjectCont">
         <ScrollAnimation
-          animateIn="fadeInUp"
+          animateIn="fadeInUp" 
           animateOnce={true}
           className="Project"
         >
