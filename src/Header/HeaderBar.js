@@ -22,10 +22,10 @@ const HeaderBar = () => {
     document.getElementById("navbar").style.boxShadow = "unset";
   }
   if (prevScrollpos > currentScrollPos && OpenHam == false) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.top = "0"; 
   } 
   else if(currentScrollPos > prevScrollpos && OpenHam == false){
-    document.getElementById("navbar").style.top = "-120px";
+    document.getElementById("navbar").style.top = "-17vh";
   }
   prevScrollpos = currentScrollPos;
 };

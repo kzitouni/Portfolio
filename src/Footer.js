@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Footer = () => {
-
+    const date = new Date()
+    const year = date.getFullYear()
     return (
         <div className="Footer">
-            @ 2019 Karim Zitouni. All rights reserved.
+            @ {year} Karim Zitouni. All rights reserved.
         </div>
     )
 }
