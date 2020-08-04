@@ -4,6 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import RealEstate from "./images/Real-estate.jpg";
 import ebay from "./images/ebay.jpg";
 import App from "./images/Outclass.jpg";
+import WebQ from "./images/WebQ.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Projects = () => {
@@ -16,6 +17,41 @@ const Projects = () => {
         </ScrollAnimation>
       </div>
       <div className="ProjectCont">
+    <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce={true}
+          className="Project"
+        >
+          <div className="ProjectImg" id="Middle_Proj">
+            <div>
+              <img src={WebQ} alt="Web Quickify" />
+              <a
+                href="https://webquickify.com"
+                target="_blank"
+                className="ImgOver Web"
+              />
+            </div>
+          </div>
+          <div className="ProjectDesc">
+            <a href="https://webquickify.com" target="_blank">
+              Web Quickify
+            </a>
+            <div className="TextBox">
+              <p>
+                A platform that lets you easily monitor the performance of your website with real time data. 
+                I built out the front end for this website in React using Next.js and javascript. 
+              </p>
+            </div>
+            <div className="ProjectBottom">
+              <h2>React - Next.js - Javascript - CSS</h2>
+              <div>
+                <a href="https://webquickify.com" target="_blank">
+                  <FiExternalLink />
+                </a>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeInUp" 
           animateOnce={true}
