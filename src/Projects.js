@@ -38,8 +38,8 @@ const Projects = () => {
             </a>
             <div className="TextBox">
               <p>
-                A platform that lets you easily monitor the performance of your website with real time data. 
-                I built out the front end for this website in React using Next.js and javascript. 
+               Managed all stages of web site creation for a client from initial design, architecture to development, deployment, and web site management.  
+               Prioritized and fixed site-related design problems and implemented new features based on user feedback.
               </p>
             </div>
             <div className="ProjectBottom">
@@ -77,7 +77,7 @@ const Projects = () => {
                 the Zillow API to return homes for any
                 address searched. Google maps was utilized to display the
                 location of each home and an AWS server was set up to handle
-                fetch calls to the Zillow API more effectively
+                fetch calls to the Zillow API more effectively.
               </p>
             </div>
             <div className="ProjectBottom">
